@@ -1,6 +1,10 @@
 # - - - - - DecayQueueJS - - - - -
 A queue that only holds elements for a specified duration.
 
+```html
+<script src="https://raw.githubusercontent.com/byxor/DecayQueueJS/master/decayqueue.js"></script>
+```
+
 # What is it?
 
 ## Normal Queue
