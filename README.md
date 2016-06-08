@@ -84,10 +84,8 @@ dq.enqueue("Thing at front");
 dq.enqueue("Thing in middle");
 dq.enqueue("Thing at back");
 
-console.log(dq.dequeue());
-// Prints "Thing at front"
-console.log(dq.dequeue());
-// Prints "Thing in middle"
+console.log(dq.dequeue());	// Prints "Thing at front"
+console.log(dq.dequeue());	// Prints "Thing in middle"
 ```
 
 
@@ -99,8 +97,18 @@ dq.enqueue("Thing at front");
 dq.enqueue("Thing in middle");
 dq.enqueue("Thing at back");
 
-console.log(dq.peek());
-// Prints "Thing at front"
-console.log(dq.peek());
-// Prints "Thing at front"
+console.log(dq.peek());	// Prints "Thing at front"
+console.log(dq.peek());	// Prints "Thing at front"
+```
+
+
+
+## DecayQueue.isEmpty()
+Returns true if the queue is empty.  
+```javascript
+var dq = new DecayQueue(1000);
+
+console.log(dq.isEmpty());	// Prints "true"
+dq.enqueue("Something");
+console.log(dq.isEmpty());	// Prints "false"
 ```
