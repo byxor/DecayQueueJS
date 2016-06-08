@@ -28,7 +28,7 @@ This is an improvement, **but there are some problems**.
 What would happen if you hit 20 directional buttons really fast, then just watched it? **Think about it.**  
 _I'll give you 5 seconds to think about it..._
 
-Pacman would make 20 successive turns whenever possible. All of your input would be rendered **useless** during the time that pacman was busy turning around and responding to those 20 commands. To make things worse, if pacman got stuck due to invalid input, he'd never be able to move again. Obviously you could just hard-code a fix to this but when you're making dirty fixes like that, you know there's a better way.
+Pacman would make 20 successive turns whenever possible. Any further input would be rendered **useless** during the time that pacman was busy turning around and responding to those 20 commands. To make things worse, if pacman got stuck due to invalid input, he'd never be able to move again. Obviously you could just hard-code a fix to this but when you're making dirty fixes like that, you know there's a better way.
 
 Now imagine you chose a DecayQueue instead and gave it a lifetime of 500 milliseconds...
 
