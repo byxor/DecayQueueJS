@@ -1,22 +1,27 @@
 # - - - - - DecayQueueJS - - - - -
 A queue that only holds elements for a specified duration.
 
-```html
-<script src="https://raw.githubusercontent.com/byxor/DecayQueueJS/master/decayqueue.js"></script>
-```
-Or download it and...
+## Installation
+Just include it in your HTML file.
+
+You can either download a copy...
 ```html
 <script src="decayqueue.js"></script>
 ```
 
+Or link to the latest copy on github...
+```html
+<script src="https://raw.githubusercontent.com/byxor/DecayQueueJS/master/decayqueue.js"></script>
+```
+
 ## What is it?
 
-### Normal Queue
+##### Normal Queue
 * Is a fantastic data structure.
 * Works on a **First in, first out** basis.
 * Great for processing things in a **First come, first served** manner.
 
-### Decay Queue
+##### Decay Queue
 * Is a normal queue _(with a bit extra)_.
 * Elements are **automatically removed** if they sit there too long.
 * You can specify how long you want the queue to hold its elements.
@@ -45,9 +50,13 @@ Now pacman can...
 
 A simple swap to a DecayQueue fixes the majority of the problems.
 
-## How would I use it?
-
-Take a look at the documentation below, it'll help you out.
+.
+.
+.
+.
+.
+.
+.
 
 # - - - - - Documentation - - - - -
 
