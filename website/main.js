@@ -1,22 +1,26 @@
-var lifetime = 1000;
+var lifetime = 2000;
 var inputQueue = new DecayQueue(lifetime);
 
 function setup()
 {
 	frameRate(30);
-	createCanvas(600, 600);
+	createCanvas(windowWidth*0.98, 40);
+	
+	fill(255, 255, 255);
+	textSize(30);
 }
 
 function draw()
 {
 	inputQueue.update();
 	
-	background(255, 255, 255);
+	background(60, 60, 255);
 	
 	for (var i = 0; i < inputQueue.getLength(); i++)
 	{
 		var input = inputQueue.get(i);
-		text(input, 10, (i+4)*15);
+		var c = String.fromCharCode(input);
+		text(c, 5 + i * 50, 30);
 	}
 	
 }
