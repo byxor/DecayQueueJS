@@ -112,3 +112,16 @@ console.log(dq.isEmpty());	// Prints "true"
 dq.enqueue("Something");
 console.log(dq.isEmpty());	// Prints "false"
 ```
+
+
+
+## DecayQueue.getLength()
+Returns the length of the queue.  
+```javascript
+var dq = new DecayQueue(1000);
+
+dq.enqueue("Foo");
+dq.enqueue("Bar");
+
+console.log(dq.getLength());	// Prints "2"
+```
