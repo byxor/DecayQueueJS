@@ -86,6 +86,21 @@ dq.enqueue("Thing at back");
 
 console.log(dq.dequeue());
 // Prints "Thing at front"
-```  
-**Parameters:**  
-*element* : The thing you want to put into the queue.
+console.log(dq.dequeue());
+// Prints "Thing in middle"
+```
+
+
+## DecayQueue.peek()
+Returns the element at the front without removing it.  
+```javascript
+...
+dq.enqueue("Thing at front");
+dq.enqueue("Thing in middle");
+dq.enqueue("Thing at back");
+
+console.log(dq.peek());
+// Prints "Thing at front"
+console.log(dq.peek());
+// Prints "Thing at front"
+```
