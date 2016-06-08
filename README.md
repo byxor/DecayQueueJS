@@ -125,3 +125,21 @@ dq.enqueue("Bar");
 
 console.log(dq.getLength());	// Prints "2"
 ```
+
+
+
+## DecayQueue.blast()
+Remove all elements in the queue.  
+```javascript
+var dq = new DecayQueue(1000);
+
+dq.enqueue("Foo");
+dq.enqueue("Bar");
+
+console.log(dq.getLength());	// Prints "2"
+
+dq.blast();
+
+console.log(dq.getLength());	// Prints "0"
+
+```
