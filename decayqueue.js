@@ -81,4 +81,8 @@ DecayQueue.prototype.blast = function()
 		this.dequeue();
 };
 
+DecayQueue.prototype.get = function(i)
+{
+	return this.__list[i];
+};
 
