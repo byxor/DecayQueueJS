@@ -13,11 +13,9 @@ function draw()
 	
 	background(255, 255, 255);
 	
-	
-	
 	for (var i = 0; i < inputQueue.getLength(); i++)
 	{
-		var input = inputQueue.peek();
+		var input = inputQueue.get(i);
 		text(input, 10, (i+4)*15);
 	}
 	
