@@ -1,34 +1,31 @@
-# - - - - - DecayQueueJS - - - - -
-A queue that only holds elements for a specified duration.
-
-## Installation
-Just include it in your HTML file.
-
-You can either download a copy...
-```html
-<script src="decayqueue.js"></script>
-```
-
-Or link to the latest copy on github...
-```html
-<script src="https://raw.githubusercontent.com/byxor/DecayQueueJS/master/decayqueue.js"></script>
-```
+# ~ DecayQueueJS ~
 
 ## What is it?
 
 ##### Normal Queue
-* Is a fantastic data structure.
 * Works on a **First in, first out** basis.
 * Great for processing things in a **First come, first served** manner.
+* Is a fantastic data structure.
 
 ##### Decay Queue
 * Is a normal queue _(with a bit extra)_.
 * Elements are **automatically removed** if they sit there too long.
 * You can specify how long you want the queue to hold its elements.
 
-It's as simple as that!
+## Installation
+There are 2 ways to include it in your HTML file.
 
-## Why would I need it?
+1. Download a copy...
+```html
+<script src="decayqueue.js"></script>
+```
+
+2. Or link to the latest copy on github...
+```html
+<script src="https://raw.githubusercontent.com/byxor/DecayQueueJS/master/decayqueue.js"></script>
+```
+
+## Scenario where it's useful
 
 Imagine you're programming a game of pacman and you want to allow the player to move around fluidly. A beginner programmer may just check the directional input once, then throw it away if turning is impossible.
 
@@ -58,7 +55,7 @@ A simple swap to a DecayQueue fixes the majority of the problems.
 .
 .
 
-# - - - - - Documentation - - - - -
+# - - - - - - Documentation - - - - - -
 
 ## Tips
 * Never access the properties directly, it's a bad idea.
