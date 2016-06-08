@@ -75,4 +75,10 @@ DecayQueue.prototype.getLength = function()
 	return this.list.length;
 };
 
+DecayQueue.prototype.blast = function()
+{
+	for (var i = 0; i < this.list.length; i++)
+		this.dequeue();
+};
+
 
