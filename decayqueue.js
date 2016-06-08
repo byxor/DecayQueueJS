@@ -40,7 +40,7 @@ DecayQueue.prototype.update = function()
 	var decayCount = this.__countDecayed();
 	
 	for (var i = 0; i < decayCount; i++)
-		this.pop();
+		this.dequeue();
 };
 
 DecayQueue.prototype.enqueue = function(element)
