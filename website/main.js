@@ -17,7 +17,7 @@ function draw()
 	
 	for (var i = 0; i < inputQueue.getLength(); i++)
 	{
-		var input = inputQueue.dequeue();
+		var input = inputQueue.peek();
 		text(input, 10, (i+4)*15);
 	}
 	
