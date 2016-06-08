@@ -1,37 +1,3 @@
-# - - - Documentation - - -
-
-## Tips
-* Never access the properties directly, it's a bad idea.
-* Always update the queue before you read from it.
-
-## DecayQueue(lifetime)
-
-Constructor function.  
-```javascript
-var lifetime = 1000;
-var dq = new DecayQueue(1000);
-...
-```  
-**Parameters:**  
-*lifetime* : The number of milliseconds to keep an element after it has been inserted.
-
-## DecayQueue.enqueue(element)
-Adds an element to the back of the queue.  
-```javascript
-...
-var tempString = "I'm going into the queue!";
-var dq.enqueue(tempString);
-```  
-**Parameters:**  
-*element* : The thing you want to put into the queue.
-
-.
-.
-.
-.
-.
-.
-
 # - - - DecayQueueJS - - -
 A queue that only holds elements for a specified duration.
 
@@ -74,3 +40,32 @@ Now pacman can...
 A simple swap to a DecayQueue fixes the majority of the problems.
 
 # How would I use it?
+
+Take a look at the documentation below, it'll help you out.
+
+# - - - Documentation - - -
+
+## Tips
+* Never access the properties directly, it's a bad idea.
+* Always update the queue before you read from it.
+
+## DecayQueue(lifetime)
+
+Constructor function.  
+```javascript
+var lifetime = 1000;
+var dq = new DecayQueue(1000);
+...
+```  
+**Parameters:**  
+*lifetime* : The number of milliseconds to keep an element after it has been inserted.
+
+## DecayQueue.enqueue(element)
+Adds an element to the back of the queue.  
+```javascript
+...
+var tempString = "I'm going into the queue!";
+var dq.enqueue(tempString);
+```  
+**Parameters:**  
+*element* : The thing you want to put into the queue.
