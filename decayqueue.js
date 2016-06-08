@@ -6,6 +6,10 @@ function DecayQueue(lifetime)
 	this.lifetime = lifetime;
 };
 
+/* ##################################################
+ * # DON'T CALL THESE PLEASE.                       #
+ * ################################################*/
+
 DecayQueue.prototype.__hasDecayed = function(i)
 {
 	var decayTime = this.times[i] + this.lifetime;
@@ -27,7 +31,10 @@ DecayQueue.prototype.__countDecayed = function()
 	return decayCount;
 };
 
-// Call me to update the current state of the queue to its correct state.
+/* ##################################################
+ * # Methods you should care about.                 #
+ * ################################################*/
+
 DecayQueue.prototype.update = function()
 {
 	var decayCount = this.__countDecayed();
@@ -36,20 +43,22 @@ DecayQueue.prototype.update = function()
 		this.pop();
 };
 
-DecayQueue.prototype.push = function(element)
+DecayQueue.prototype.enqueue = function(element)
 {
 	this.list.push(element);
 	this.times.push(Date.now());
 };
 
-// DOES NOT RETURN ANYTHING, JUST REMOVES FRONT ELEMENT.
-DecayQueue.prototype.pop = function()
+DecayQueue.prototype.dequeue = function()
 {
+	var element = this.list[0];	
+	
 	this.list.splice(0, 1);
 	this.times.splice(0, 1);
+	
+	return element;
 };
 
-// DOES NOT REMOVE FRONT ELEMENT, JUST RETURNS IT.
 DecayQueue.prototype.read = function()
 {
 	var element = this.list[0];
