@@ -2,19 +2,28 @@
 
 ## Tips
 * Never access the properties directly, it's a bad idea.
-* 
+* Always update the queue before you read from it.
 
-## DecayQueue()
+## DecayQueue(lifetime)
 
 Constructor function.  
 ```javascript
-var lifetime = 1000
+var lifetime = 1000;
 var dq = new DecayQueue(1000);
+...
 ```  
 **Parameters:**  
 *lifetime* : The number of milliseconds to keep an element after it has been inserted.
 
-## 
+## DecayQueue.enqueue(element)
+Adds an element to the back of the queue.  
+```javascript
+...
+var tempString = "I'm going into the queue!";
+var dq.enqueue(tempString);
+```  
+**Parameters:**  
+*element* : The thing you want to put into the queue.
 
 .
 .
