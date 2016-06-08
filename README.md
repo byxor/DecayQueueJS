@@ -47,13 +47,13 @@ Now pacman can...
 
 A simple swap to a DecayQueue fixes the majority of the problems.
 
-.
-.
-.
-.
-.
-.
-.
+.  
+.  
+.  
+.  
+.  
+.  
+.  
 
 # - - - - - - Documentation - - - - - -
 
