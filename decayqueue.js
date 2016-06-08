@@ -1,7 +1,7 @@
 function DecayQueue(lifetime)
 {
-	this.list = [];
-	this.times = [];
+	this.__list = [];
+	this.__times = [];
 	
 	this.lifetime = lifetime;
 };
@@ -12,7 +12,7 @@ function DecayQueue(lifetime)
 
 DecayQueue.prototype.__hasDecayed = function(i)
 {
-	var decayTime = this.times[i] + this.lifetime;
+	var decayTime = this.__times[i] + this.lifetime;
 	return Date.now() >= decayTime;
 };
 
@@ -20,7 +20,7 @@ DecayQueue.prototype.__countDecayed = function()
 {
 	var decayCount = 0;
 	
-	for (var i = 0; i < this.list.length; i++)
+	for (var i = 0; i < this.__list.length; i++)
 	{
 		if (this.__hasDecayed(i))
 			decayCount++;
@@ -45,39 +45,39 @@ DecayQueue.prototype.update = function()
 
 DecayQueue.prototype.enqueue = function(element)
 {
-	this.list.push(element);
-	this.times.push(Date.now());
+	this.__list.push(element);
+	this.__times.push(Date.now());
 };
 
 DecayQueue.prototype.dequeue = function()
 {
-	var element = this.list[0];	
+	var element = this.__list[0];	
 	
-	this.list.splice(0, 1);
-	this.times.splice(0, 1);
+	this.__list.splice(0, 1);
+	this.__times.splice(0, 1);
 	
 	return element;
 };
 
 DecayQueue.prototype.peek = function()
 {
-	var element = this.list[0];
+	var element = this.__list[0];
 	return element;	
 };
 
 DecayQueue.prototype.isEmpty = function()
 {
-	return this.list.length <= 0;
+	return this.__list.length <= 0;
 };
 
 DecayQueue.prototype.getLength = function()
 {
-	return this.list.length;
+	return this.__list.length;
 };
 
 DecayQueue.prototype.blast = function()
 {
-	for (var i = 0; i < this.list.length; i++)
+	for (var i = 0; i < this.__list.length; i++)
 		this.dequeue();
 };
 
