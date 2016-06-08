@@ -1,4 +1,4 @@
-# - - - DecayQueueJS - - -
+# - - - - - DecayQueueJS - - - - -
 A queue that only holds elements for a specified duration.
 
 # What is it?
@@ -43,7 +43,7 @@ A simple swap to a DecayQueue fixes the majority of the problems.
 
 Take a look at the documentation below, it'll help you out.
 
-# - - - Documentation - - -
+# - - - - - Documentation - - - - -
 
 ## Tips
 * Never access the properties directly, it's a bad idea.
