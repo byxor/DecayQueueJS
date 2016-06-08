@@ -21,11 +21,10 @@ It's as simple as that!
 
 Imagine you're programming a game of pacman and you want to allow the player to move around fluidly. A beginner programmer may just check the directional input once, then throw it away if turning is impossible.
 
-Your gut instinct is to go for a queue to store the directional input. You'd do this so that pacman will turn at the next available point if the direction is pressed a little bit early.
+Maybe you're a little smarter and your gut instinct tells you to use a queue to store the directional input. You'd do this so that pacman will turn at the next available point if the direction is pressed a little bit early.
 
 This is a nice solution, **but there is a problem**.
 
 
-Have you ever wanted to program a game, but you have no idea how to store user input and process it in the order that it arrived? Well, a great data structure for that is a queue. But sometimes a queue isn't enough. Maybe you want to add a lifetime onto the input so that if it hasn't been processed after a duration, it'll be removed.
 
 # How would I use it?
