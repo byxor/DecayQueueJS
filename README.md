@@ -49,6 +49,8 @@ Take a look at the documentation below, it'll help you out.
 * Never access the properties directly, it's a bad idea.
 * Always update the queue before you read from it.
 
+
+
 ## DecayQueue(lifetime)
 
 Constructor function.  
@@ -60,12 +62,30 @@ var dq = new DecayQueue(1000);
 **Parameters:**  
 *lifetime* : The number of milliseconds to keep an element after it has been inserted.
 
+
+
 ## DecayQueue.enqueue(element)
 Adds an element to the back of the queue.  
 ```javascript
 ...
 var tempString = "I'm going into the queue!";
-var dq.enqueue(tempString);
+dq.enqueue(tempString);
+```  
+**Parameters:**  
+*element* : The thing you want to put into the queue.
+
+
+
+## DecayQueue.dequeue()
+Removes the element from the front of the queue and returns it.  
+```javascript
+...
+dq.enqueue("Thing at front");
+dq.enqueue("Thing in middle");
+dq.enqueue("Thing at back");
+
+console.log(dq.dequeue());
+// Prints "Thing at front"
 ```  
 **Parameters:**  
 *element* : The thing you want to put into the queue.
