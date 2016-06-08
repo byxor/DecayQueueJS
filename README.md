@@ -34,7 +34,7 @@ Now imagine you chose a DecayQueue instead and gave it a lifetime of 500 millise
 
 Now pacman can...
 * Respond and react to early input.
-* Not get caught up following commands from 7 seconds ago.
+* Disregard input that was given over 500ms ago.
 * Not get stuck in corners.
 
 A simple swap to a DecayQueue fixes the majority of the problems.
