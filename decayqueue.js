@@ -70,3 +70,9 @@ DecayQueue.prototype.isEmpty = function()
 	return this.list.length <= 0;
 };
 
+DecayQueue.prototype.getLength = function()
+{
+	return this.list.length;
+};
+
+
