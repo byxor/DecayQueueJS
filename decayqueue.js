@@ -59,7 +59,7 @@ DecayQueue.prototype.dequeue = function()
 	return element;
 };
 
-DecayQueue.prototype.read = function()
+DecayQueue.prototype.peek = function()
 {
 	var element = this.list[0];
 	return element;	
