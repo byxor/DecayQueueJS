@@ -1,4 +1,29 @@
-# DecayQueueJS
+# - - - Documentation - - -
+
+## Tips
+* Never access the properties directly, it's a bad idea.
+* 
+
+## DecayQueue()
+
+Constructor function.  
+```javascript
+var lifetime = 1000
+var dq = new DecayQueue(1000);
+```  
+**Parameters:**  
+*lifetime* : The number of milliseconds to keep an element after it has been inserted.
+
+## 
+
+.
+.
+.
+.
+.
+.
+
+# - - - DecayQueueJS - - -
 A queue that only holds elements for a specified duration.
 
 # What is it?
