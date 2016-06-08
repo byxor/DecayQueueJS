@@ -3,7 +3,7 @@ function DecayQueue(lifetime)
 	this.__list = [];
 	this.__times = [];
 	
-	this.lifetime = lifetime;
+	this.__lifetime = lifetime;
 };
 
 /* ##################################################
@@ -12,7 +12,7 @@ function DecayQueue(lifetime)
 
 DecayQueue.prototype.__hasDecayed = function(i)
 {
-	var decayTime = this.__times[i] + this.lifetime;
+	var decayTime = this.__times[i] + this.__lifetime;
 	return Date.now() >= decayTime;
 };
 
