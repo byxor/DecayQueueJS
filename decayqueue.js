@@ -28,7 +28,7 @@ DecayQueue.prototype.__countDecayed = function()
 };
 
 // Call me to update the current state of the queue to its correct state.
-DecayQueue.prototype.removeDecayed = function()
+DecayQueue.prototype.update = function()
 {
 	var decayCount = this.__countDecayed();
 	
