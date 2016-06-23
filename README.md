@@ -141,7 +141,7 @@ console.log(dq.getLength());	// Prints "2"
 
 
 
-## DecayQueue.blast()
+## DecayQueue.clear()
 Remove all elements in the queue.  
 ```javascript
 var dq = new DecayQueue(1000);
@@ -151,7 +151,7 @@ dq.enqueue("Bar");
 
 console.log(dq.getLength());	// Prints "2"
 
-dq.blast();
+dq.clear();
 
 console.log(dq.getLength());	// Prints "0"
 
